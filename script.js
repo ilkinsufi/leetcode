@@ -60,8 +60,28 @@
 
 // isValid("()[]{}");
 
-var strStr = function (haystack, needle) {
-  return haystack.indexOf(needle);
-};
+// 28. Find the Index of the First Occurrence in a String
+// var strStr = function (haystack, needle) {
+//   return haystack.indexOf(needle);
+// };
 
-strStr("sadbutsad", "sad");
+// strStr("sadbutsad", "sad");
+
+
+// 58. Length of Last Word
+// var lengthOfLastWord = function (s) {
+//     let length = 0;
+//     let i = s.length - 1;
+
+//     while (i >= 0 && s[i] === ' ') {
+//         i--;
+//     }
+
+//     while (i >= 0 && s[i] !== ' ') {
+//         length++;
+//         i--;
+//     }
+
+//     return length;
+// };
+
