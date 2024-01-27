@@ -50,7 +50,7 @@
 //       ) {
 //         stack.pop();
 //       } else {
-//         return false; 
+//         return false;
 //       }
 //     }
 //   }
@@ -59,3 +59,9 @@
 // };
 
 // isValid("()[]{}");
+
+var strStr = function (haystack, needle) {
+  return haystack.indexOf(needle);
+};
+
+strStr("sadbutsad", "sad");
