@@ -67,7 +67,6 @@
 
 // strStr("sadbutsad", "sad");
 
-
 // 58. Length of Last Word
 // var lengthOfLastWord = function (s) {
 //     let length = 0;
@@ -85,3 +84,21 @@
 //     return length;
 // };
 
+// 145. Binary Tree Postorder Traversal
+// var postorderTraversal = function (root) {
+//   let result = [];
+
+//   const traverse = (node) => {
+//     if (node !== null) {
+//       traverse(node.left);
+
+//       traverse(node.right);
+
+//       result.push(node.val);
+//     }
+//   };
+
+//   traverse(root);
+
+//   return result;
+// };
