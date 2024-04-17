@@ -11,7 +11,7 @@
 //     }
 //   }
 
-//  return indices; 
+//  return indices;
 // };
 
 // 14.Longest Common Prefix
@@ -102,3 +102,10 @@
 
 //   return result;
 // };
+
+// 
+// var addDigits = function(num) {
+//     return(num.toString().split('').map(Number).reduce((a, b) => a + b).toString().split('').map(Number).reduce((a, b) => a + b));
+// };
+
+// addDigits(38);
