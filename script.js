@@ -111,15 +111,28 @@
 // addDigits(38);
 
 // 283. Move Zeroes
-var moveZeroes = function (nums) {
-  console.log(nums);
-  withoutZero = nums.filter((num) => num === 0);
-  console.log(withoutZero);
+// var moveZeroes = function (nums) {
+//   console.log(nums);
+//   withoutZero = nums.filter((num) => num === 0);
+//   console.log(withoutZero);
 
-  for (let i = 0; i < withoutZero.length; i++) {
-    nums.splice(nums.indexOf(0), 1);
-    nums.push(0);
+//   for (let i = 0; i < withoutZero.length; i++) {
+//     nums.splice(nums.indexOf(0), 1);
+//     nums.push(0);
+//   }
+//   console.log(nums);
+// };
+// moveZeroes([0, 1, 0, 3, 12]);
+
+// 268. Missing Number
+
+var missingNumber = function (nums) {
+  const maksimum = Math.max(...nums);
+  for (let i = 0; i <= maxNum; i++) {
+    if (!nums.includes(i)) {
+      return i;
+    }
   }
-  console.log(nums);
+  return maxNum + 1;
 };
-moveZeroes([0, 1, 0, 3, 12]);
+missingNumber([3, 0, 1]);
