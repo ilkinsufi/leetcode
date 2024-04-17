@@ -103,9 +103,23 @@
 //   return result;
 // };
 
-// 
+//
 // var addDigits = function(num) {
 //     return(num.toString().split('').map(Number).reduce((a, b) => a + b).toString().split('').map(Number).reduce((a, b) => a + b));
 // };
 
 // addDigits(38);
+
+// 283. Move Zeroes
+var moveZeroes = function (nums) {
+  console.log(nums);
+  withoutZero = nums.filter((num) => num === 0);
+  console.log(withoutZero);
+
+  for (let i = 0; i < withoutZero.length; i++) {
+    nums.splice(nums.indexOf(0), 1);
+    nums.push(0);
+  }
+  console.log(nums);
+};
+moveZeroes([0, 1, 0, 3, 12]);
