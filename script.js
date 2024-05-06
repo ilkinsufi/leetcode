@@ -126,13 +126,23 @@
 
 // 268. Missing Number
 
-var missingNumber = function (nums) {
-  const maksimum = Math.max(...nums);
-  for (let i = 0; i <= maxNum; i++) {
-    if (!nums.includes(i)) {
-      return i;
-    }
-  }
-  return maxNum + 1;
-};
-missingNumber([3, 0, 1]);
+// var missingNumber = function (nums) {
+//   const maksimum = Math.max(...nums);
+//   for (let i = 0; i <= maxNum; i++) {
+//     if (!nums.includes(i)) {
+//       return i;
+//     }
+//   }
+//   return maxNum + 1;
+// };
+// missingNumber([3, 0, 1]);
+
+// 2703. Return Length of Arguments Passed
+
+// var argumentsLength = function (...args) {
+//  return(args.length);
+// };
+
+// argumentsLength([{}, null, "3"]);
+
+
