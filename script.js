@@ -126,10 +126,6 @@
 
 // 268. Missing Number
 
-
-
-
-
 //var missingNumber = function (nums) {
 //  const maksimum = Math.max(...nums);
 //  for (let i = 0; i <= maxNum; i++) {
@@ -141,4 +137,26 @@
 //};
 //missingNumber([3, 0, 1]);
 
+// 88. Merge Sorted Array
+var merge = function (nums1, m, nums2, n) {
+  let newArr1 = [];
+  let newArr2 = [];
 
+  for (let i = 0; i < m; i++) {
+    newArr1.push(nums1[i]);
+  }
+  for (let i = 0; i < n; i++) {
+    newArr2.push(nums2[i]);
+  }
+
+  let finalArray = [...newArr1, ...newArr2];
+  finalArray.sort((a, b) => a - b);
+
+  for (let i = 0; i < finalArray.length; i++) {
+    nums1[i] = finalArray[i];
+  }
+
+  console.log(nums1);
+};
+
+merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3);
