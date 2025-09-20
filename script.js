@@ -138,25 +138,38 @@
 //missingNumber([3, 0, 1]);
 
 // 88. Merge Sorted Array
-var merge = function (nums1, m, nums2, n) {
-  let newArr1 = [];
-  let newArr2 = [];
+// var merge = function (nums1, m, nums2, n) {
+//   let newArr1 = [];
+//   let newArr2 = [];
 
-  for (let i = 0; i < m; i++) {
-    newArr1.push(nums1[i]);
-  }
-  for (let i = 0; i < n; i++) {
-    newArr2.push(nums2[i]);
-  }
+//   for (let i = 0; i < m; i++) {
+//     newArr1.push(nums1[i]);
+//   }
+//   for (let i = 0; i < n; i++) {
+//     newArr2.push(nums2[i]);
+//   }
 
-  let finalArray = [...newArr1, ...newArr2];
-  finalArray.sort((a, b) => a - b);
+//   let finalArray = [...newArr1, ...newArr2];
+//   finalArray.sort((a, b) => a - b);
 
-  for (let i = 0; i < finalArray.length; i++) {
-    nums1[i] = finalArray[i];
-  }
+//   for (let i = 0; i < finalArray.length; i++) {
+//     nums1[i] = finalArray[i];
+//   }
 
-  console.log(nums1);
-};
+//   console.log(nums1);
+// };
 
-merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3);
+// 168. Excel Sheet Column Title
+// const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+// var convertToTitle = function(columnNumber) {
+//     let title = '';
+//     while (columnNumber > 0) {
+//         columnNumber--;  
+//         title = alphabet[columnNumber % 26] + title;
+//         columnNumber = Math.floor(columnNumber / 26);
+//     }
+//     return title;
+// };
+
+// convertToTitle(703);
